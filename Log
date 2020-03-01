@@ -1,0 +1,896 @@
+RimWorld 1.1.2560 rev1176
+Verse.Log:Message(String, Boolean)
+RimWorld.VersionControl:LogVersionNumber()
+Verse.Root:CheckGlobalInit()
+Verse.Root:Start()
+Verse.Root_Entry:Start()
+
+Error while instantiating a mod of type aRandomKiwi.ATPP.AndroidTiersPP: System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.BadImageFormatException: Could not resolve field token 0x040001a1, due to: Could not load type of field 'aRandomKiwi.ATPP.Utils:harmonyInstance' (1) due to: Could not resolve type with token 010000fd (from typeref, class/assembly Harmony.HarmonyInstance, 0Harmony, Version=1.2.0.1, Culture=neutral, PublicKeyToken=null) assembly:0Harmony, Version=1.2.0.1, Culture=neutral, PublicKeyToken=null type:Harmony.HarmonyInstance member:(null) signature:<none> assembly:data-0000023FD095F400 type:Utils member:(null) signature:<none>
+  at (wrapper managed-to-native) System.Reflection.MonoCMethod.InternalInvoke(System.Reflection.MonoCMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00002] in <567df3e0919241ba98db88bec4c6696f>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00014] in <567df3e0919241ba98db88bec4c6696f>:0 
+  at System.Reflection.MonoCMethod.DoInvoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0007a] in <567df3e0919241ba98db88bec4c6696f>:0 
+  at System.Reflection.MonoCMethod.Invoke (System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in <567df3e0919241ba98db88bec4c6696f>:0 
+  at System.RuntimeType.CreateInstanceImpl (System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Object[] args, System.Globalization.CultureInfo culture, System.Object[] activationAttributes, System.Threading.StackCrawlMark& stackMark) [0x00213] in <567df3e0919241ba98db88bec4c6696f>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Object[] args, System.Globalization.CultureInfo culture, System.Object[] activationAttributes) [0x00095] in <567df3e0919241ba98db88bec4c6696f>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Object[] args) [0x00000] in <567df3e0919241ba98db88bec4c6696f>:0 
+  at Verse.LoadedModManager.CreateModClasses () [0x00076] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+Verse.Log:Error(String, Boolean)
+Verse.LoadedModManager:CreateModClasses()
+Verse.LoadedModManager:LoadAllActiveMods()
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+XML error: Duplicate XML node name designationCategory in this XML block: <ThingDef ParentName="BedWithQualityBase"><defName>AndroidOperationBed</defName><label>android upgrade station</label><description>A specifically made table, made to assist with android upgrades and other operations. The station is equipped with all the tools needed to work on androids, as well as two displays that show important information about the android to the mechanic.</description><graphicData><texPath>Things/Building/AndroidBed/AndroidBed</texPath><graphicClass>Graphic_Multi</graphicClass><shaderType>CutoutComplex</shaderType><drawSize>(1.35,2.1)</drawSize></graphicData><designationCategory>ATPP_DesignationAndroidTiers</designationCategory><comps><li Class="CompProperties_AffectedByFacilities"><linkableFacilities><li>AndroidOperationKit</li></linkableFacilities></li></comps><castEdgeShadows>True</castEdgeShadows><statBases><MaxHitPoints>180</MaxHitPoints><WorkToBuild>3200</WorkToBuild><Mass>50</Mass><Flammability>0.4</Flammability><BedRestEffectiveness>0.75</BedRestEffectiveness><Comfort>0.70</Comfort><ImmunityGainSpeedFactor>0.95</ImmunityGainSpeedFactor><MedicalTendQualityOffset>0.10</MedicalTendQualityOffset><AndroidSurgerySuccessChanceFactor>1.3</AndroidSurgerySuccessChanceFactor><SurgerySuccessChanceFactor>0.85</SurgerySuccessChanceFactor></statBases><size>(1,2)</size><costList><Plasteel>40</Plasteel><Steel>80</Steel><ComponentIndustrial>5</ComponentIndustrial></costList><building><bed_showSleeperBody>True</bed_showSleeperBody><bed_healPerDay>15</bed_healPerDay><bed_defaultMedical>true</bed_defaultMedical></building><fillPercent>0.4</fillPercent><pathCost>60</pathCost><leaveResourcesWhenKilled>True</leaveResourcesWhenKilled><staticSunShadowHeight>0.17</staticSunShadowHeight><researchPrerequisites><li>AndroidOperationFurniture</li></researchPrerequisites><constructionSkillPrerequisite>10</constructionSkillPrerequisite><techLevel>Spacer</techLevel><uiIconScale>1</uiIconScale><designationCategory>ATPP_DesignationAndroidTiers</designationCategory></ThingDef>
+Verse.Log:Error(String, Boolean)
+Verse.XmlInheritance:CheckForDuplicateNodes(XmlNode, XmlNode)
+Verse.XmlInheritance:ResolveXmlNodeFor(XmlInheritanceNode)
+Verse.XmlInheritance:ResolveXmlNodesRecursively(XmlInheritanceNode)
+Verse.XmlInheritance:ResolveXmlNodesRecursively(XmlInheritanceNode)
+Verse.XmlInheritance:ResolveXmlNodesRecursively(XmlInheritanceNode)
+Verse.XmlInheritance:ResolveXmlNodesRecursively(XmlInheritanceNode)
+Verse.XmlInheritance:ResolveXmlNodesRecursively(XmlInheritanceNode)
+Verse.XmlInheritance:ResolveXmlNodes()
+Verse.XmlInheritance:Resolve()
+Verse.LoadedModManager:ParseAndProcessXML(XmlDocument, Dictionary`2)
+Verse.LoadedModManager:LoadAllActiveMods()
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+XML error: <useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories> doesn't correspond to any field in type GeneralSettings. Context: <generalSettings><useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories><maleGenderProbability>0.5</maleGenderProbability><allowHumanBios>false</allowHumanBios><maxDamageForSocialfight>6</maxDamageForSocialfight><immuneToAge>false</immuneToAge><disallowedTraits><li>DrugDesire</li><li>AnnoyingVoice</li><li>CreepyBreathing</li><li>Pyromaniac</li><li>Wimp</li><li>Masochist</li><li>Nudist</li><li>NightOwl</li><li>Transhumanist</li><li>BodyPurist</li><li>SuperImmune</li><li>Beautiful</li><li>Jealous</li><li>Tough</li><li>MechAtlas</li></disallowedTraits><notXenophobistTowards><li>Human</li><li>Android4Tier</li><li>Android3Tier</li><li>Android2Tier</li><li>Android1Tier</li></notXenophobistTowards><alienPartGenerator><alienbodytypes><li>Male</li><li>Female</li></alienbodytypes><aliencrowntypes><li>Average_Normal</li></aliencrowntypes><alienskinsecondcolorgen Class="ColorGenerator_Options"><options><li><weight>10</weight><min>RGBA(1,1,1,1)</min><max>RGBA(1,1,1,1)</max></li></options></alienskinsecondcolorgen><alienskincolorgen Class="ColorGenerator_Options"><options><li><weight>10</weight><only>RGBA(1.0,1.0,1.0,1)</only></li></options></alienskincolorgen></alienPartGenerator></generalSettings>
+Verse.Log:Error(String, Boolean)
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXmlReflection(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXmlReflection(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXmlReflection(XmlNode, Boolean)
+Verse.DirectXmlLoader:DefFromNode(XmlNode, LoadableXmlAsset)
+Verse.LoadedModManager:ParseAndProcessXML(XmlDocument, Dictionary`2)
+Verse.LoadedModManager:LoadAllActiveMods()
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+XML error: <useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories> doesn't correspond to any field in type GeneralSettings. Context: <generalSettings><useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories><maleGenderProbability>0.5</maleGenderProbability><allowHumanBios>false</allowHumanBios><maxDamageForSocialfight>6</maxDamageForSocialfight><immuneToAge>false</immuneToAge><disallowedTraits><li>DrugDesire</li><li>AnnoyingVoice</li><li>CreepyBreathing</li><li>Pyromaniac</li><li>Wimp</li><li>Masochist</li><li>Nudist</li><li>NightOwl</li><li>Jealous</li><li>Transhumanist</li><li>BodyPurist</li><li>SuperImmune</li><li>Beautiful</li><li>Tough</li><li>MechAtlas</li></disallowedTraits><notXenophobistTowards><li>Human</li><li>Android4Tier</li><li>Android1Tier</li><li>Android2Tier</li><li>Android3Tier</li></notXenophobistTowards><alienPartGenerator><alienbodytypes><li>Male</li><li>Female</li></alienbodytypes><aliencrowntypes><li>Average_Normal</li><li>Average_Hurted</li></aliencrowntypes><alienskincolorgen Class="ColorGenerator_Options"><options><li><weight>10</weight><only>RGBA(0.90764,0.8262,0.63333,1)</only></li><li><weight>10</weight><only>RGBA(0.89764,0.75262,0.57333,1)</only></li><li><weight>10</weight><only>RGBA(0.89803,0.701960,0.46666,1)</only></li><li><weight>10</weight><only>RGBA(0.79803,0.501960,0.36666,1)</only></li><li><weight>10</weight><only>RGBA(0.556862,0.360784,0.219607,1)</only></li></options></alienskincolorgen></alienPartGenerator></generalSettings>
+Verse.Log:Error(String, Boolean)
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXmlReflection(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXmlReflection(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXmlReflection(XmlNode, Boolean)
+Verse.DirectXmlLoader:DefFromNode(XmlNode, LoadableXmlAsset)
+Verse.LoadedModManager:ParseAndProcessXML(XmlDocument, Dictionary`2)
+Verse.LoadedModManager:LoadAllActiveMods()
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+XML error: <useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories> doesn't correspond to any field in type GeneralSettings. Context: <generalSettings><useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories><maleGenderProbability>0.5</maleGenderProbability><allowHumanBios>false</allowHumanBios><maxDamageForSocialfight>6</maxDamageForSocialfight><immuneToAge>false</immuneToAge><disallowedTraits><li>DrugDesire</li><li>AnnoyingVoice</li><li>CreepyBreathing</li><li>Pyromaniac</li><li>Wimp</li><li>Masochist</li><li>NightOwl</li><li>Jealous</li><li>Nudist</li><li>Transhumanist</li><li>BodyPurist</li><li>SuperImmune</li><li>Beautiful</li><li>Tough</li><li>MechAtlas</li></disallowedTraits><notXenophobistTowards><li>Human</li><li>Android3Tier</li><li>Android1Tier</li><li>Android2Tier</li><li>Android4Tier</li></notXenophobistTowards><alienPartGenerator><alienbodytypes><li>Male</li><li>Female</li></alienbodytypes><aliencrowntypes><li>Average_Normal</li><li>Average_Hurted</li></aliencrowntypes><alienskincolorgen Class="ColorGenerator_Options"><options><li><weight>10</weight><only>RGBA(0.90764,0.8262,0.63333,1)</only></li><li><weight>10</weight><only>RGBA(0.89764,0.75262,0.57333,1)</only></li><li><weight>10</weight><only>RGBA(0.89803,0.701960,0.46666,1)</only></li><li><weight>10</weight><only>RGBA(0.79803,0.501960,0.36666,1)</only></li><li><weight>10</weight><only>RGBA(0.556862,0.360784,0.219607,1)</only></li></options></alienskincolorgen></alienPartGenerator></generalSettings>
+Verse.Log:Error(String, Boolean)
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXmlReflection(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXmlReflection(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXmlReflection(XmlNode, Boolean)
+Verse.DirectXmlLoader:DefFromNode(XmlNode, LoadableXmlAsset)
+Verse.LoadedModManager:ParseAndProcessXML(XmlDocument, Dictionary`2)
+Verse.LoadedModManager:LoadAllActiveMods()
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Parsed 1.5 as int.
+Verse.Log:Warning(String, Boolean)
+Verse.ParseHelper:ParseIntPermissive(String)
+Verse.ParseHelper:FromString(String)
+Verse.ThingDefCountClass:LoadDataFromXmlCustom(XmlNode)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ListFromXml(XmlNode)
+Verse.DirectXmlToObject:ListFromXmlReflection(XmlNode)
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXmlReflection(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXmlReflection(XmlNode, Boolean)
+Verse.DirectXmlLoader:DefFromNode(XmlNode, LoadableXmlAsset)
+Verse.LoadedModManager:ParseAndProcessXML(XmlDocument, Dictionary`2)
+Verse.LoadedModManager:LoadAllActiveMods()
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Parsed 3.5 as int.
+Verse.Log:Warning(String, Boolean)
+Verse.ParseHelper:ParseIntPermissive(String)
+Verse.ParseHelper:FromString(String)
+Verse.ThingDefCountClass:LoadDataFromXmlCustom(XmlNode)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ListFromXml(XmlNode)
+Verse.DirectXmlToObject:ListFromXmlReflection(XmlNode)
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXmlReflection(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXmlReflection(XmlNode, Boolean)
+Verse.DirectXmlLoader:DefFromNode(XmlNode, LoadableXmlAsset)
+Verse.LoadedModManager:ParseAndProcessXML(XmlDocument, Dictionary`2)
+Verse.LoadedModManager:LoadAllActiveMods()
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Parsed 7.5 as int.
+Verse.Log:Warning(String, Boolean)
+Verse.ParseHelper:ParseIntPermissive(String)
+Verse.ParseHelper:FromString(String)
+Verse.ThingDefCountClass:LoadDataFromXmlCustom(XmlNode)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ListFromXml(XmlNode)
+Verse.DirectXmlToObject:ListFromXmlReflection(XmlNode)
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXmlReflection(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXmlReflection(XmlNode, Boolean)
+Verse.DirectXmlLoader:DefFromNode(XmlNode, LoadableXmlAsset)
+Verse.LoadedModManager:ParseAndProcessXML(XmlDocument, Dictionary`2)
+Verse.LoadedModManager:LoadAllActiveMods()
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Parsed 2.5 as int.
+Verse.Log:Warning(String, Boolean)
+Verse.ParseHelper:ParseIntPermissive(String)
+Verse.ParseHelper:FromString(String)
+Verse.ThingDefCountClass:LoadDataFromXmlCustom(XmlNode)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ListFromXml(XmlNode)
+Verse.DirectXmlToObject:ListFromXmlReflection(XmlNode)
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXmlReflection(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXml(XmlNode, Boolean)
+Verse.DirectXmlToObject:ObjectFromXmlReflection(XmlNode, Boolean)
+Verse.DirectXmlLoader:DefFromNode(XmlNode, LoadableXmlAsset)
+Verse.LoadedModManager:ParseAndProcessXML(XmlDocument, Dictionary`2)
+Verse.LoadedModManager:LoadAllActiveMods()
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Exception getting types in assembly Android Tiers++, Version=2.11.13.0, Culture=neutral, PublicKeyToken=null
+Verse.Log:Error(String, Boolean)
+Verse.<get_AllTypes>d__4:MoveNext()
+System.Linq.WhereEnumerableIterator`1:MoveNext()
+Verse.<AllDefTypesWithDatabases>d__3:MoveNext()
+Verse.LoadedLanguage:EnsureAllDefTypesHaveDefInjectionPackage()
+Verse.LoadedLanguage:LoadData()
+Verse.LoadedLanguage:TryGetTextFromKey(String, TaggedString&)
+Verse.Translator:TryTranslate(String, TaggedString&)
+Verse.Translator:Translate(String)
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Could not resolve cross-reference to Verse.ThingCategoryDef named BodyPartsArtificial (wanter=thingCategories)
+Verse.Log:Error(String, Boolean)
+Verse.DirectXmlCrossRefLoader:TryResolveDef(String, FailMode, Object)
+Verse.WantedRefForList`1:TryResolve(FailMode)
+Verse.<>c__DisplayClass14_1:<ResolveAllWantedCrossReferences>b__0(WantedRef)
+Verse.<>c__DisplayClass6_1`1:<ParallelForEach>b__0(Object)
+System.Threading.QueueUserWorkItemCallback:WaitCallback_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.QueueUserWorkItemCallback:System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+System.Threading.ThreadPoolWorkQueue:Dispatch()
+System.Threading._ThreadPoolWaitCallback:PerformWaitCallback()
+
+Could not resolve cross-reference: No RimWorld.StatDef named SmithingSpeed found to give to Verse.RecipeDef ATPP_Make_SM7MechHandCannon
+Verse.Log:Error(String, Boolean)
+Verse.WantedRefForObject:TryResolve(FailMode)
+Verse.<>c__DisplayClass14_1:<ResolveAllWantedCrossReferences>b__0(WantedRef)
+Verse.<>c__DisplayClass6_1`1:<ParallelForEach>b__0(Object)
+System.Threading.QueueUserWorkItemCallback:WaitCallback_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.QueueUserWorkItemCallback:System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+System.Threading.ThreadPoolWorkQueue:Dispatch()
+System.Threading._ThreadPoolWaitCallback:PerformWaitCallback()
+
+Could not resolve cross-reference to Verse.ThingCategoryDef named BodyPartsArtificial (wanter=thingCategories)
+Verse.Log:Error(String, Boolean)
+Verse.DirectXmlCrossRefLoader:TryResolveDef(String, FailMode, Object)
+Verse.WantedRefForList`1:TryResolve(FailMode)
+Verse.<>c__DisplayClass14_1:<ResolveAllWantedCrossReferences>b__0(WantedRef)
+Verse.<>c__DisplayClass6_1`1:<ParallelForEach>b__0(Object)
+System.Threading.QueueUserWorkItemCallback:WaitCallback_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.QueueUserWorkItemCallback:System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+System.Threading.ThreadPoolWorkQueue:Dispatch()
+System.Threading._ThreadPoolWaitCallback:PerformWaitCallback()
+
+Could not resolve cross-reference: No RimWorld.StatDef named SmithingSpeed found to give to Verse.RecipeDef ATPP_Make_T4ArtificialBrain
+Verse.Log:Error(String, Boolean)
+Verse.WantedRefForObject:TryResolve(FailMode)
+Verse.<>c__DisplayClass14_1:<ResolveAllWantedCrossReferences>b__0(WantedRef)
+Verse.<>c__DisplayClass6_1`1:<ParallelForEach>b__0(Object)
+System.Threading.QueueUserWorkItemCallback:WaitCallback_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.QueueUserWorkItemCallback:System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+System.Threading.ThreadPoolWorkQueue:Dispatch()
+System.Threading._ThreadPoolWaitCallback:PerformWaitCallback()
+
+Could not resolve cross-reference: No RimWorld.StatDef named SmithingSpeed found to give to Verse.RecipeMakerProperties Verse.RecipeMakerProperties
+Verse.Log:Error(String, Boolean)
+Verse.WantedRefForObject:TryResolve(FailMode)
+Verse.<>c__DisplayClass14_1:<ResolveAllWantedCrossReferences>b__0(WantedRef)
+Verse.<>c__DisplayClass6_1`1:<ParallelForEach>b__0(Object)
+System.Threading.QueueUserWorkItemCallback:WaitCallback_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.QueueUserWorkItemCallback:System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+System.Threading.ThreadPoolWorkQueue:Dispatch()
+System.Threading._ThreadPoolWaitCallback:PerformWaitCallback()
+
+Could not resolve cross-reference to Verse.ThingCategoryDef named BodyPartsArtificial (wanter=thingCategories)
+Verse.Log:Error(String, Boolean)
+Verse.DirectXmlCrossRefLoader:TryResolveDef(String, FailMode, Object)
+Verse.WantedRefForList`1:TryResolve(FailMode)
+Verse.<>c__DisplayClass14_1:<ResolveAllWantedCrossReferences>b__0(WantedRef)
+Verse.<>c__DisplayClass6_1`1:<ParallelForEach>b__0(Object)
+System.Threading.QueueUserWorkItemCallback:WaitCallback_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.QueueUserWorkItemCallback:System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+System.Threading.ThreadPoolWorkQueue:Dispatch()
+System.Threading._ThreadPoolWaitCallback:PerformWaitCallback()
+
+Exception getting types in assembly Android Tiers++, Version=2.11.13.0, Culture=neutral, PublicKeyToken=null
+Verse.Log:Error(String, Boolean)
+Verse.<get_AllTypes>d__4:MoveNext()
+System.Linq.WhereEnumerableIterator`1:MoveNext()
+RimWorld.DefOfHelper:RebindAllDefOfs(Boolean)
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Config error in ATPP_ConsciousnessUpload: Hediff with defName ATPP_ConsciousnessUpload has no description!
+Verse.Log:Error(String, Boolean)
+Verse.DefDatabase`1:ErrorCheckAllDefs()
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+Verse.GenGeneric:InvokeStaticMethodOnGenericType(Type, Type, String)
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Config error in ATPP_NoHost: Hediff with defName ATPP_NoHost has no description!
+Verse.Log:Error(String, Boolean)
+Verse.DefDatabase`1:ErrorCheckAllDefs()
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+Verse.GenGeneric:InvokeStaticMethodOnGenericType(Type, Type, String)
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Config error in ATPP_InRemoteControlMode: Hediff with defName ATPP_InRemoteControlMode has no description!
+Verse.Log:Error(String, Boolean)
+Verse.DefDatabase`1:ErrorCheckAllDefs()
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+Verse.GenGeneric:InvokeStaticMethodOnGenericType(Type, Type, String)
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Config error in ATPP_BlankAndroid: Hediff with defName ATPP_BlankAndroid has no description!
+Verse.Log:Error(String, Boolean)
+Verse.DefDatabase`1:ErrorCheckAllDefs()
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+Verse.GenGeneric:InvokeStaticMethodOnGenericType(Type, Type, String)
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Config error in ATPP_RemotelyControlled: Hediff with defName ATPP_RemotelyControlled has no description!
+Verse.Log:Error(String, Boolean)
+Verse.DefDatabase`1:ErrorCheckAllDefs()
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+Verse.GenGeneric:InvokeStaticMethodOnGenericType(Type, Type, String)
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Config error in ATPP_Rusted: Hediff with defName ATPP_Rusted has no description!
+Verse.Log:Error(String, Boolean)
+Verse.DefDatabase`1:ErrorCheckAllDefs()
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+Verse.GenGeneric:InvokeStaticMethodOnGenericType(Type, Type, String)
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Config error in ATPP_SolarFlareAndroidImpact: Hediff with defName ATPP_SolarFlareAndroidImpact has no description!
+Verse.Log:Error(String, Boolean)
+Verse.DefDatabase`1:ErrorCheckAllDefs()
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+Verse.GenGeneric:InvokeStaticMethodOnGenericType(Type, Type, String)
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Config error in ATPP_LowNetworkSignal: Hediff with defName ATPP_LowNetworkSignal has no description!
+Verse.Log:Error(String, Boolean)
+Verse.DefDatabase`1:ErrorCheckAllDefs()
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+Verse.GenGeneric:InvokeStaticMethodOnGenericType(Type, Type, String)
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Config error in ATPP_HediffRXChip: Hediff with defName ATPP_HediffRXChip has no description!
+Verse.Log:Error(String, Boolean)
+Verse.DefDatabase`1:ErrorCheckAllDefs()
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+Verse.GenGeneric:InvokeStaticMethodOnGenericType(Type, Type, String)
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Config error in ATPP_HediffVX0Chip: Hediff with defName ATPP_HediffVX0Chip has no description!
+Verse.Log:Error(String, Boolean)
+Verse.DefDatabase`1:ErrorCheckAllDefs()
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+Verse.GenGeneric:InvokeStaticMethodOnGenericType(Type, Type, String)
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Config error in ATPP_HediffVX1Chip: Hediff with defName ATPP_HediffVX1Chip has no description!
+Verse.Log:Error(String, Boolean)
+Verse.DefDatabase`1:ErrorCheckAllDefs()
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+Verse.GenGeneric:InvokeStaticMethodOnGenericType(Type, Type, String)
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Config error in ATPP_HediffVX2Chip: Hediff with defName ATPP_HediffVX2Chip has no description!
+Verse.Log:Error(String, Boolean)
+Verse.DefDatabase`1:ErrorCheckAllDefs()
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+Verse.GenGeneric:InvokeStaticMethodOnGenericType(Type, Type, String)
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Config error in ATPP_HediffVX3Chip: Hediff with defName ATPP_HediffVX3Chip has no description!
+Verse.Log:Error(String, Boolean)
+Verse.DefDatabase`1:ErrorCheckAllDefs()
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+Verse.GenGeneric:InvokeStaticMethodOnGenericType(Type, Type, String)
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Config error in ATPP_DummyHediff: Hediff with defName ATPP_DummyHediff has no description!
+Verse.Log:Error(String, Boolean)
+Verse.DefDatabase`1:ErrorCheckAllDefs()
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+Verse.GenGeneric:InvokeStaticMethodOnGenericType(Type, Type, String)
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Exception getting types in assembly Android Tiers++, Version=2.11.13.0, Culture=neutral, PublicKeyToken=null
+Verse.Log:Error(String, Boolean)
+Verse.<get_AllTypes>d__4:MoveNext()
+System.Linq.WhereEnumerableIterator`1:MoveNext()
+Verse.PlayDataLoader:DoPlayLoad()
+Verse.PlayDataLoader:LoadAllPlayData(Boolean)
+Verse.<>c:<Start>b__6_1()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Translation data for language English has 697 errors. Generate translation report for more info.
+Verse.Log:Warning(String, Boolean)
+Verse.LoadedLanguage:InjectIntoData_AfterImpliedDefs()
+Verse.<>c:<DoPlayLoad>b__4_1()
+Verse.LongEventHandler:ExecuteToExecuteWhenFinished()
+Verse.LongEventHandler:UpdateCurrentAsynchronousEvent()
+Verse.LongEventHandler:LongEventsUpdate(Boolean&)
+Verse.Root:Update()
+Verse.Root_Entry:Update()
+
+Could not execute post-long-event action. Exception: System.TypeInitializationException: The type initializer for 'AlienRace.HarmonyPatches' threw an exception. ---> System.Reflection.ReflectionTypeLoadException: Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
+  at (wrapper managed-to-native) System.Reflection.Assembly.GetTypes(System.Reflection.Assembly,bool)
+  at System.Reflection.Assembly.GetTypes () [0x00000] in <567df3e0919241ba98db88bec4c6696f>:0 
+  at HarmonyLib.AccessTools.GetTypesFromAssembly (System.Reflection.Assembly assembly) [0x00000] in <2161c8330234450b8141397c32c11571>:0 
+  at HarmonyLib.AccessTools+<>c.<TypeByName>b__2_1 (System.Reflection.Assembly a) [0x00000] in <2161c8330234450b8141397c32c11571>:0 
+  at System.Linq.Enumerable+SelectManySingleSelectorIterator`2[TSource,TResult].MoveNext () [0x00051] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
+  at System.Linq.Enumerable.TryGetFirst[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] predicate, System.Boolean& found) [0x0004f] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
+  at System.Linq.Enumerable.FirstOrDefault[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] predicate) [0x00000] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
+  at HarmonyLib.AccessTools.TypeByName (System.String name) [0x00077] in <2161c8330234450b8141397c32c11571>:0 
+  at AlienRace.HarmonyPatches..cctor () [0x00688] in <42462b21baba4ac3b1edbe95bf686557>:0 
+   --- End of inner exception stack trace ---
+  at (wrapper managed-to-native) System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(intptr)
+  at System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor (System.RuntimeTypeHandle type) [0x0002a] in <567df3e0919241ba98db88bec4c6696f>:0 
+  at Verse.StaticConstructorOnStartupUtility.CallAll () [0x00018] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PlayDataLoader+<>c.<DoPlayLoad>b__4_2 () [0x0000a] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.LongEventHandler.ExecuteToExecuteWhenFinished () [0x0007d] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+Verse.Log:Error(String, Boolean)
+Verse.LongEventHandler:ExecuteToExecuteWhenFinished()
+Verse.LongEventHandler:UpdateCurrentAsynchronousEvent()
+Verse.LongEventHandler:LongEventsUpdate(Boolean&)
+Verse.Root:Update()
+Verse.Root_Entry:Update()
+
+[ATPP] PawnApparelGeneratorPatching Object reference not set to an instance of an object   at MOARANDROIDS.GC_ATPP..ctor (Verse.Game game) [0x019fb] in <68577916bb8641e29b1433a7f1fd2d5f>:0 
+Verse.Log:Message(String, Boolean)
+MOARANDROIDS.GC_ATPP:.ctor(Game)
+System.Reflection.MonoCMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoCMethod:InternalInvoke(Object, Object[])
+System.Reflection.MonoCMethod:DoInvoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MonoCMethod:Invoke(BindingFlags, Binder, Object[], CultureInfo)
+System.RuntimeType:CreateInstanceImpl(BindingFlags, Binder, Object[], CultureInfo, Object[], StackCrawlMark&)
+System.Activator:CreateInstance(Type, BindingFlags, Binder, Object[], CultureInfo, Object[])
+System.Activator:CreateInstance(Type, Object[])
+Verse.Game:FillComponents()
+Verse.Game:.ctor()
+RimWorld.Page_SelectScenario:BeginScenarioConfiguration(Scenario, Page)
+RimWorld.Page_SelectScenario:CanDoNext()
+RimWorld.Page:DoBottomButtons(Rect, String, String, Action, Boolean, Boolean)
+RimWorld.Page_SelectScenario:DoWindowContents(Rect)
+Verse.Window:InnerWindowOnGUI(Int32)
+UnityEngine.GUI:CallWindowDelegate(WindowFunction, Int32, Int32, GUISkin, Int32, Single, Single, GUIStyle)
+
+[ATPP] 12 Care job collected for crafting injection
+Verse.Log:Message(String, Boolean)
+MOARANDROIDS.GC_ATPP:.ctor(Game)
+System.Reflection.MonoCMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoCMethod:InternalInvoke(Object, Object[])
+System.Reflection.MonoCMethod:DoInvoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MonoCMethod:Invoke(BindingFlags, Binder, Object[], CultureInfo)
+System.RuntimeType:CreateInstanceImpl(BindingFlags, Binder, Object[], CultureInfo, Object[], StackCrawlMark&)
+System.Activator:CreateInstance(Type, BindingFlags, Binder, Object[], CultureInfo, Object[])
+System.Activator:CreateInstance(Type, Object[])
+Verse.Game:FillComponents()
+Verse.Game:.ctor()
+RimWorld.Page_SelectScenario:BeginScenarioConfiguration(Scenario, Page)
+RimWorld.Page_SelectScenario:CanDoNext()
+RimWorld.Page:DoBottomButtons(Rect, String, String, Action, Boolean, Boolean)
+RimWorld.Page_SelectScenario:DoWindowContents(Rect)
+Verse.Window:InnerWindowOnGUI(Int32)
+UnityEngine.GUI:CallWindowDelegate(WindowFunction, Int32, Int32, GUISkin, Int32, Single, Single, GUIStyle)
+
+[ATPP] 4 MentalBreaks collected
+Verse.Log:Message(String, Boolean)
+MOARANDROIDS.GC_ATPP:.ctor(Game)
+System.Reflection.MonoCMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoCMethod:InternalInvoke(Object, Object[])
+System.Reflection.MonoCMethod:DoInvoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MonoCMethod:Invoke(BindingFlags, Binder, Object[], CultureInfo)
+System.RuntimeType:CreateInstanceImpl(BindingFlags, Binder, Object[], CultureInfo, Object[], StackCrawlMark&)
+System.Activator:CreateInstance(Type, BindingFlags, Binder, Object[], CultureInfo, Object[])
+System.Activator:CreateInstance(Type, Object[])
+Verse.Game:FillComponents()
+Verse.Game:.ctor()
+RimWorld.Page_SelectScenario:BeginScenarioConfiguration(Scenario, Page)
+RimWorld.Page_SelectScenario:CanDoNext()
+RimWorld.Page:DoBottomButtons(Rect, String, String, Action, Boolean, Boolean)
+RimWorld.Page_SelectScenario:DoWindowContents(Rect)
+Verse.Window:InnerWindowOnGUI(Int32)
+UnityEngine.GUI:CallWindowDelegate(WindowFunction, Int32, Int32, GUISkin, Int32, Single, Single, GUIStyle)
+
+Exception getting types in assembly Android Tiers++, Version=2.11.13.0, Culture=neutral, PublicKeyToken=null
+Verse.Log:Error(String, Boolean)
+Verse.<get_AllTypes>d__4:MoveNext()
+System.Linq.WhereEnumerableIterator`1:MoveNext()
+Verse.Game:FillComponents()
+Verse.Game:.ctor()
+RimWorld.Page_SelectScenario:BeginScenarioConfiguration(Scenario, Page)
+RimWorld.Page_SelectScenario:CanDoNext()
+RimWorld.Page:DoBottomButtons(Rect, String, String, Action, Boolean, Boolean)
+RimWorld.Page_SelectScenario:DoWindowContents(Rect)
+Verse.Window:InnerWindowOnGUI(Int32)
+UnityEngine.GUI:CallWindowDelegate(WindowFunction, Int32, Int32, GUISkin, Int32, Single, Single, GUIStyle)
+
+Error while generating pawn. Rethrowing. Exception: System.Reflection.ReflectionTypeLoadException: Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
+  at (wrapper managed-to-native) System.Reflection.Assembly.GetTypes(System.Reflection.Assembly,bool)
+  at System.Reflection.Assembly.GetTypes () [0x00000] in <567df3e0919241ba98db88bec4c6696f>:0 
+  at AbilityUser.AbilityUserUtility.GetAllChildrenOf (System.Type pType) [0x00052] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at AbilityUser.AbilityUserUtility.TransformPawn (Verse.Pawn p) [0x0000f] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at AbilityUser.AbilityUserMod.InternalAddInAbilityUsers (Verse.Pawn pawn) [0x0001e] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at AbilityUser.AbilityUserMod.InitializeComps_PostFix (Verse.ThingWithComps __instance) [0x00010] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at (wrapper dynamic-method) Verse.ThingWithComps.DMD<DMD<InitializeComps_Patch1>?-1074637952::InitializeComps_Patch1>(Verse.ThingWithComps)
+  at Verse.ThingWithComps.PostMake () [0x00006] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.ThingMaker.MakeThing (Verse.ThingDef def, Verse.ThingDef stuff) [0x000ca] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.TryGenerateNewPawnInternal (Verse.PawnGenerationRequest& request, System.String& error, System.Boolean ignoreScenarioRequirements, System.Boolean ignoreValidator) [0x00009] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.GenerateNewPawnInternal (Verse.PawnGenerationRequest& request) [0x00096] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.GenerateOrRedressPawnInternal (Verse.PawnGenerationRequest request) [0x00183] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.GeneratePawn (Verse.PawnGenerationRequest request) [0x00000] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+Verse.Log:Error(String, Boolean)
+Verse.PawnGenerator:GeneratePawn(PawnGenerationRequest)
+RimWorld.Faction:GenerateNewLeader()
+RimWorld.FactionGenerator:NewGeneratedFaction(FactionDef)
+RimWorld.FactionGenerator:GenerateFactionsIntoWorld()
+RimWorld.Planet.WorldGenStep_Factions:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature, OverallPopulation)
+RimWorld.Page_CreateWorldParams:<CanDoNext>b__14_0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Error in WorldGenStep: System.Reflection.ReflectionTypeLoadException: Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
+  at (wrapper managed-to-native) System.Reflection.Assembly.GetTypes(System.Reflection.Assembly,bool)
+  at System.Reflection.Assembly.GetTypes () [0x00000] in <567df3e0919241ba98db88bec4c6696f>:0 
+  at AbilityUser.AbilityUserUtility.GetAllChildrenOf (System.Type pType) [0x00052] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at AbilityUser.AbilityUserUtility.TransformPawn (Verse.Pawn p) [0x0000f] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at AbilityUser.AbilityUserMod.InternalAddInAbilityUsers (Verse.Pawn pawn) [0x0001e] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at AbilityUser.AbilityUserMod.InitializeComps_PostFix (Verse.ThingWithComps __instance) [0x00010] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at (wrapper dynamic-method) Verse.ThingWithComps.DMD<DMD<InitializeComps_Patch1>?-1074637952::InitializeComps_Patch1>(Verse.ThingWithComps)
+  at Verse.ThingWithComps.PostMake () [0x00006] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.ThingMaker.MakeThing (Verse.ThingDef def, Verse.ThingDef stuff) [0x000ca] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.TryGenerateNewPawnInternal (Verse.PawnGenerationRequest& request, System.String& error, System.Boolean ignoreScenarioRequirements, System.Boolean ignoreValidator) [0x00009] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.GenerateNewPawnInternal (Verse.PawnGenerationRequest& request) [0x00096] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.GenerateOrRedressPawnInternal (Verse.PawnGenerationRequest request) [0x00183] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.GeneratePawn (Verse.PawnGenerationRequest request) [0x00137] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at RimWorld.Faction.GenerateNewLeader () [0x0014f] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at RimWorld.FactionGenerator.NewGeneratedFaction (RimWorld.FactionDef facDef) [0x0018e] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at RimWorld.FactionGenerator.GenerateFactionsIntoWorld () [0x0001b] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at RimWorld.Planet.WorldGenStep_Factions.GenerateFresh (System.String seed) [0x00000] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at RimWorld.Planet.WorldGenerator.GenerateWorld (System.Single planetCoverage, System.String seedString, RimWorld.Planet.OverallRainfall overallRainfall, RimWorld.Planet.OverallTemperature overallTemperature, RimWorld.Planet.OverallPopulation population) [0x000ec] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature, OverallPopulation)
+RimWorld.Page_CreateWorldParams:<CanDoNext>b__14_0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Error while generating pawn. Rethrowing. Exception: System.Reflection.ReflectionTypeLoadException: Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
+  at (wrapper managed-to-native) System.Reflection.Assembly.GetTypes(System.Reflection.Assembly,bool)
+  at System.Reflection.Assembly.GetTypes () [0x00000] in <567df3e0919241ba98db88bec4c6696f>:0 
+  at AbilityUser.AbilityUserUtility.GetAllChildrenOf (System.Type pType) [0x00052] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at AbilityUser.AbilityUserUtility.TransformPawn (Verse.Pawn p) [0x0000f] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at AbilityUser.AbilityUserMod.InternalAddInAbilityUsers (Verse.Pawn pawn) [0x0001e] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at AbilityUser.AbilityUserMod.InitializeComps_PostFix (Verse.ThingWithComps __instance) [0x00010] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at (wrapper dynamic-method) Verse.ThingWithComps.DMD<DMD<InitializeComps_Patch1>?-1074637952::InitializeComps_Patch1>(Verse.ThingWithComps)
+  at Verse.ThingWithComps.PostMake () [0x00006] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.ThingMaker.MakeThing (Verse.ThingDef def, Verse.ThingDef stuff) [0x000ca] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.TryGenerateNewPawnInternal (Verse.PawnGenerationRequest& request, System.String& error, System.Boolean ignoreScenarioRequirements, System.Boolean ignoreValidator) [0x00009] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.GenerateNewPawnInternal (Verse.PawnGenerationRequest& request) [0x00096] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.GenerateOrRedressPawnInternal (Verse.PawnGenerationRequest request) [0x00183] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.GeneratePawn (Verse.PawnGenerationRequest request) [0x00000] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+Verse.Log:Error(String, Boolean)
+Verse.PawnGenerator:GeneratePawn(PawnGenerationRequest)
+Verse.StartingPawnUtility:NewGeneratedStartingPawn()
+RimWorld.ScenPart_ConfigPage_ConfigureStartingPawns:PostWorldGenerate()
+RimWorld.Scenario:PostWorldGenerate()
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature, OverallPopulation)
+RimWorld.Page_CreateWorldParams:<CanDoNext>b__14_0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+There was an exception thrown by the PawnGenerator during generating a starting pawn. Trying one more time...
+Exception: System.Reflection.ReflectionTypeLoadException: Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
+  at (wrapper managed-to-native) System.Reflection.Assembly.GetTypes(System.Reflection.Assembly,bool)
+  at System.Reflection.Assembly.GetTypes () [0x00000] in <567df3e0919241ba98db88bec4c6696f>:0 
+  at AbilityUser.AbilityUserUtility.GetAllChildrenOf (System.Type pType) [0x00052] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at AbilityUser.AbilityUserUtility.TransformPawn (Verse.Pawn p) [0x0000f] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at AbilityUser.AbilityUserMod.InternalAddInAbilityUsers (Verse.Pawn pawn) [0x0001e] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at AbilityUser.AbilityUserMod.InitializeComps_PostFix (Verse.ThingWithComps __instance) [0x00010] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at (wrapper dynamic-method) Verse.ThingWithComps.DMD<DMD<InitializeComps_Patch1>?-1074637952::InitializeComps_Patch1>(Verse.ThingWithComps)
+  at Verse.ThingWithComps.PostMake () [0x00006] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.ThingMaker.MakeThing (Verse.ThingDef def, Verse.ThingDef stuff) [0x000ca] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.TryGenerateNewPawnInternal (Verse.PawnGenerationRequest& request, System.String& error, System.Boolean ignoreScenarioRequirements, System.Boolean ignoreValidator) [0x00009] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.GenerateNewPawnInternal (Verse.PawnGenerationRequest& request) [0x00096] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.GenerateOrRedressPawnInternal (Verse.PawnGenerationRequest request) [0x00183] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.GeneratePawn (Verse.PawnGenerationRequest request) [0x00137] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.StartingPawnUtility.NewGeneratedStartingPawn () [0x00075] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+Verse.Log:Error(String, Boolean)
+Verse.StartingPawnUtility:NewGeneratedStartingPawn()
+RimWorld.ScenPart_ConfigPage_ConfigureStartingPawns:PostWorldGenerate()
+RimWorld.Scenario:PostWorldGenerate()
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature, OverallPopulation)
+RimWorld.Page_CreateWorldParams:<CanDoNext>b__14_0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Error while generating pawn. Rethrowing. Exception: System.Reflection.ReflectionTypeLoadException: Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
+  at (wrapper managed-to-native) System.Reflection.Assembly.GetTypes(System.Reflection.Assembly,bool)
+  at System.Reflection.Assembly.GetTypes () [0x00000] in <567df3e0919241ba98db88bec4c6696f>:0 
+  at AbilityUser.AbilityUserUtility.GetAllChildrenOf (System.Type pType) [0x00052] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at AbilityUser.AbilityUserUtility.TransformPawn (Verse.Pawn p) [0x0000f] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at AbilityUser.AbilityUserMod.InternalAddInAbilityUsers (Verse.Pawn pawn) [0x0001e] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at AbilityUser.AbilityUserMod.InitializeComps_PostFix (Verse.ThingWithComps __instance) [0x00010] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at (wrapper dynamic-method) Verse.ThingWithComps.DMD<DMD<InitializeComps_Patch1>?-1074637952::InitializeComps_Patch1>(Verse.ThingWithComps)
+  at Verse.ThingWithComps.PostMake () [0x00006] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.ThingMaker.MakeThing (Verse.ThingDef def, Verse.ThingDef stuff) [0x000ca] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.TryGenerateNewPawnInternal (Verse.PawnGenerationRequest& request, System.String& error, System.Boolean ignoreScenarioRequirements, System.Boolean ignoreValidator) [0x00009] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.GenerateNewPawnInternal (Verse.PawnGenerationRequest& request) [0x00096] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.GenerateOrRedressPawnInternal (Verse.PawnGenerationRequest request) [0x00183] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.GeneratePawn (Verse.PawnGenerationRequest request) [0x00000] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+Verse.Log:Error(String, Boolean)
+Verse.PawnGenerator:GeneratePawn(PawnGenerationRequest)
+Verse.StartingPawnUtility:NewGeneratedStartingPawn()
+RimWorld.ScenPart_ConfigPage_ConfigureStartingPawns:PostWorldGenerate()
+RimWorld.Scenario:PostWorldGenerate()
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature, OverallPopulation)
+RimWorld.Page_CreateWorldParams:<CanDoNext>b__14_0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
+
+Exception from asynchronous event: System.Reflection.ReflectionTypeLoadException: Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
+  at (wrapper managed-to-native) System.Reflection.Assembly.GetTypes(System.Reflection.Assembly,bool)
+  at System.Reflection.Assembly.GetTypes () [0x00000] in <567df3e0919241ba98db88bec4c6696f>:0 
+  at AbilityUser.AbilityUserUtility.GetAllChildrenOf (System.Type pType) [0x00052] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at AbilityUser.AbilityUserUtility.TransformPawn (Verse.Pawn p) [0x0000f] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at AbilityUser.AbilityUserMod.InternalAddInAbilityUsers (Verse.Pawn pawn) [0x0001e] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at AbilityUser.AbilityUserMod.InitializeComps_PostFix (Verse.ThingWithComps __instance) [0x00010] in <ff7579bc5c7d4f939ad8aefc31cf5706>:0 
+  at (wrapper dynamic-method) Verse.ThingWithComps.DMD<DMD<InitializeComps_Patch1>?-1074637952::InitializeComps_Patch1>(Verse.ThingWithComps)
+  at Verse.ThingWithComps.PostMake () [0x00006] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.ThingMaker.MakeThing (Verse.ThingDef def, Verse.ThingDef stuff) [0x000ca] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.TryGenerateNewPawnInternal (Verse.PawnGenerationRequest& request, System.String& error, System.Boolean ignoreScenarioRequirements, System.Boolean ignoreValidator) [0x00009] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.GenerateNewPawnInternal (Verse.PawnGenerationRequest& request) [0x00096] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.GenerateOrRedressPawnInternal (Verse.PawnGenerationRequest request) [0x00183] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.PawnGenerator.GeneratePawn (Verse.PawnGenerationRequest request) [0x00137] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.StartingPawnUtility.NewGeneratedStartingPawn () [0x00092] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at RimWorld.ScenPart_ConfigPage_ConfigureStartingPawns.PostWorldGenerate () [0x00020] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at RimWorld.Scenario.PostWorldGenerate () [0x00014] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at RimWorld.Planet.WorldGenerator.GenerateWorld (System.Single planetCoverage, System.String seedString, RimWorld.Planet.OverallRainfall overallRainfall, RimWorld.Planet.OverallTemperature overallTemperature, RimWorld.Planet.OverallPopulation population) [0x00148] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at RimWorld.Page_CreateWorldParams.<CanDoNext>b__14_0 () [0x0000f] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+  at Verse.LongEventHandler.RunEventFromAnotherThread (System.Action action) [0x00008] in <e6bf656ce37a4c49b7f292f3b130812e>:0 
+Verse.Log:Error(String, Boolean)
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.<>c:<UpdateCurrentAsynchronousEvent>b__27_0()
+System.Threading.ThreadHelper:ThreadStart_Context(Object)
+System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
+System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object)
+System.Threading.ThreadHelper:ThreadStart()
